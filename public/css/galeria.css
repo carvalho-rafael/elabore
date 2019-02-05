@@ -1,0 +1,13 @@
+#create-galeria {
+    padding: 30px;
+    background-color: brown;
+}
+
+#create-galeria:hover ~ #modal-create{
+    visibility: visible;
+}
+
+#modal-create {
+    visibility: hidden;
+    background-color: blue;
+}
