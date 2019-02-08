@@ -39,4 +39,14 @@ class GaleriaController extends Controller {
         $galeria_current->save();
         return redirect()->back();
     }
+
+    public function destroy($id){
+        $deleteImages = $this->image->where('galeria_id', $id)->delete();
+        $deleteGaleria = $this->galeria->find($id)->delete();
+        if($deleteGaleria)
+            return redirect('/painel/galerias');
+        else
+            return "Erro ao deletar";
+
+    }
 }

@@ -8,7 +8,7 @@
     @stack('css')
 </head>
 <body>
-    <p>NAV-BAR</p>
+    <span>NAV-BAR</span>
     <a href="{{route('posts.index')}}"> Posts </a>
     <a href="{{url('/painel/galerias')}}"> Álbuns </a>
     @section('content')
