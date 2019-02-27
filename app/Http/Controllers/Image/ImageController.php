@@ -16,12 +16,14 @@ class ImageController extends Controller {
     public function store(Request $request) {
         $image = new Image;
         $repo = new ImageRepository;
-        $path = "post";
-        $id = 12;
-        if ($request->hasFile('primaryImage')) {
-            $filename = $repo->saveImage($request->primaryImage, $path, $id, 400); 
+
+        $path = $request->path;
+        $id = $request->id;
+
+        if ($request->hasFile('image')) {
+            $filename = $repo->saveImage($request->image, $path, $id, 400); 
             $image->name = $filename;
-            $image->galeria_id = $request->galeria_id;
+            $image->galeria_id = $id;
             $image->save();
         }
         if($request->hasFile('file')){

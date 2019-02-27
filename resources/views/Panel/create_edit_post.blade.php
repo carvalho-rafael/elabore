@@ -76,6 +76,8 @@ Criar e editar posts
                 };
                 formData = new FormData();
                 formData.append('file', blobInfo.blob(), blobInfo.filename());
+                formData.append('path', 'post');
+                formData.append('id', '7');
                 xhr.send(formData);
             },
             file_picker_callback: function(cb, value, meta) {

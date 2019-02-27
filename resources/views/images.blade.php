@@ -1,6 +1,6 @@
 <form method="post" action="{{ url('/painel/images/store') }}" enctype="multipart/form-data">
    {{ csrf_field() }}
-   <input type='file' id="primaryImage" name="primaryImage" accept="image/*" />
+   <input type='file' id="image" name="image" accept="image/*" />
   ...
   <button type="submit" class="btn btn-block btn-success">
       <i class="fa fa-save"></i> Salvar
