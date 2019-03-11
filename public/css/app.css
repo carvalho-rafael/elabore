@@ -1,4 +1,51 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);body {
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);body,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+body {
   background: #f5f8fa;
+}
+
+#main-menu {
+  background-color: red;
+  height: 80px;
+  width: 100%;
+}
+
+#main-header {
+  background-color: peru;
+  height: calc(100vh - 80px);
+  width: 100%;
+}
+
+.menu-container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-item {
+  padding: 20px;
 }
 
