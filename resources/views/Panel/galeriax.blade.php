@@ -4,7 +4,7 @@ Minha galeria {{$galeria}}
 <form method="post" action="{{ url('/painel/images/store') }}" enctype="multipart/form-data">
    {{ csrf_field() }}
    <input type='hidden' id="id" name="id" value="{{$galeria->id}}" />
-   <input type='hidden' id="path" name="path" value="galeria" />
+   <input type='hidden' id="path" name="path" value="galerias" />
    <input type='file' id="image" name="image" accept="image/*" />
   ...
   <button type="submit" class="btn btn-block btn-success">
