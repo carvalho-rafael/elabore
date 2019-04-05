@@ -15,7 +15,7 @@ goTop.onclick = function() {
     });
 }
 
-document.querySelectorAll('.menu-item').forEach(function(element){
+document.querySelectorAll('.link-section').forEach(function(element){
     element.onclick = function(e){
         e.preventDefault();
         topSection = document.querySelector(element.getAttribute('href')).offsetTop;
