@@ -10,7 +10,7 @@
 <body>
     <span>NAV-BAR</span>
     <a href="{{route('posts.index')}}"> Posts </a>
-    <a href="{{url('/painel/galerias')}}"> Álbuns </a>
+    <a href="{{route('images')}}"> Fotos </a>
     @section('content')
         <p>Meu painel</p>
     @show

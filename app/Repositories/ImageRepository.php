@@ -9,9 +9,9 @@ class ImageRepository
         if (!is_null($image)) {
             $file = $image;
             $extension = $image->getClientOriginalExtension();
-            $fileName = time() . random_int(100, 999) .'.' . $extension; 
-            $destinationPath = public_path('images/'.$path.'/'.$id.'/');
-            $url = url('/images/'.$path.'/'.$id.'/'.$fileName);
+            $fileName = date('Y-m-d_H:i:s') .'.' . $extension; 
+            $destinationPath = public_path('storage/images/'.$path.'/'.$id.'/');
+            $url = '/images/'.$path.'/'.$id.'/'.$fileName;
             $fullPath = $destinationPath.$fileName;
             if (!file_exists($destinationPath)) {
                 File::makeDirectory($destinationPath, 0775, true);
@@ -27,7 +27,7 @@ class ImageRepository
             
             return $url;
         } else {
-            return 'http://'.$_SERVER['HTTP_HOST'].'/images/'.'placeholder300x300.jpg';
+            return 'http://'.$_SERVER['HTTP_HOST'].'/storage/images/'.'placeholder300x300.jpg';
         }
     }
 }

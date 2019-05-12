@@ -29,8 +29,21 @@ class ImageController extends Controller {
         if($request->hasFile('file')){
             $filename = $repo->saveImage($request->file, $path, $id, 400); 
             return json_encode(["location"=>$filename]);
-        }   
+        }
 
         return redirect()->back();
+    }
+
+    public function destroy($id) {
+        $image = new Image;
+        $thisImage = $image->find($id);
+        unlink(public_path('/storage' . $thisImage->name));
+        $destroyImage = $thisImage->delete();
+        
+        if($destroyImage)
+            return redirect()->back();
+        else {
+            return "erro ao deletar";
+        }
     }
 }
