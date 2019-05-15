@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Post;
 use PhpParser\Node\Stmt\Return_;
 use Purifier;
+use Illuminate\Support\Facades\File;
 
 class PostController extends Controller
 {
@@ -74,6 +75,9 @@ class PostController extends Controller
     {
         $post = $this->post->find($id);
         $delete = $post->delete();
+        //delete folder
+        File::deleteDirectory(public_path('/storage/images/post/').'7');
+        
         if($delete)
             return redirect('/painel/posts');
         else

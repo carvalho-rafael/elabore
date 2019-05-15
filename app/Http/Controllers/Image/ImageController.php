@@ -23,12 +23,11 @@ class ImageController extends Controller {
         if ($request->hasFile('image')) {
             $filename = $repo->saveImage($request->image, $path, $id, 400); 
             $image->name = $filename;
-            $image->galeria_id = $id;
             $image->save();
         }
         if($request->hasFile('file')){
             $filename = $repo->saveImage($request->file, $path, $id, 400); 
-            return json_encode(["location"=>$filename]);
+            return json_encode(["location"=>url('/storage').$filename]);
         }
 
         return redirect()->back();
