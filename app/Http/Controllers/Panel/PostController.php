@@ -24,11 +24,6 @@ class PostController extends Controller
         return view('Panel/posts', compact('posts'));
     }
 
-    public function create()
-    {
-        return view('Panel/create_edit_post');
-    }
-
     public function store(Request $request)
     {
         $this->post->title = $request->title;
@@ -76,7 +71,7 @@ class PostController extends Controller
         $post = $this->post->find($id);
         $delete = $post->delete();
         //delete folder
-        File::deleteDirectory(public_path('/storage/images/post/').'7');
+        File::deleteDirectory(public_path('/storage/images/post/'). $id);
         
         if($delete)
             return redirect('/painel/posts');
