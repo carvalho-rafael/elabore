@@ -1,60 +1,81 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="utf-8">
-    <title>Elabore</title>
-    <meta name="author" content="Rafael Carvalho">
-    <meta name="description" content="A Elabore é uma empresa de ensino multidisciplinar que oferece cursos como 
-    pré-vestibular e reforço escolar. conta com uma equipe de professores">
-    <link rel="shortcut icon" type="image/png" href="images/icon2.png" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/app.css">
-    @stack('style')
-</head>
-<body>
-    <nav id="main-menu">
-        <div class="logo-container">
-            <img class="logo" src="images/logo.svg" alt="Elabore">
-        </div>
-        <ul class="menu-container">
-            <li><a class="menu-item link-section" href="#about">Sobre Nós</a></li>
-            <li><a class="menu-item link-section" href="#team"> Nossa Equipe</a></li>
-            <li><a class="menu-item link-section" href="#gallery">Galeria</a></li>
-            <li><a class="menu-item link-section" href="#blog">Blog</a></li>
-            <li><a class="menu-item link-section" href="#contact">Contato</a></li>
-        </ul>
-        <!-- <div id="nav-effect"></div> -->
-    </nav>
+@extends('Site.template')
+@section('title', 'Boas ideias saem do papel')
+
+@section('content')
     <header id="main-header">
-        <img id="cover-cloud2" src="images/cloud2.svg" alt="">
+        <!-- <img id="cover-cloud2" src="images/cloud2.svg" alt=""> -->
         <img id="cover-boy" src="images/boy.svg" alt="">
-        <img id="cover-cloud1" src="images/cloud1.svg" alt="">
-        <p class="header-title">Boas ideias <br>saem do papel...</p>
-        <a href="#about" class="scroll-down link-section"></a>
+        <!-- <img id="cover-cloud1" src="images/cloud1.svg" alt=""> -->
+        <div class="header-info">
+            <p class="header-info-title">Aulas particulares</p>
+            <p>Ensino Fundamental</p>
+            <p>Ensino Médio</p>
+            <p><span class="header-info-extra">+</span> Pré-vestibular</p>
+            <p><span class="header-info-extra">+</span> Pré-IFBA</p>
+            <a href="#about" class="scroll-down link-section">CONHEÇA</a>
+        </div>
     </header>
     <section id="about" class="section">
         <h1>A ELABORE</h1>
         <div class="section-content">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nisl ipsum, blandit at vulputate vitae, suscipit vel erat. Nam eu viverra nisi. Aenean rhoncus maximus nunc, sed efficitur ligula viverra congue. Nulla maximus enim ut risus dignissim egestas. Curabitur quis venenatis ante, vel tincidunt nibh.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nisl ipsum, blandit at vulputate vitae, suscipit vel erat. Nam eu viverra nisi. Aenean rhoncus maximus nunc, sed efficitur ligula viverra congue. Nulla maximus enim ut risus dignissim egestas. Curabitur quis venenatis ante, vel tincidunt nibh.</p>
         </div>
     </section>
-    <section id="team" class="section">
-        <h1>Nossa Equipe</h1>
-        <div class="section-content">
-            <img src="images/team.jpg" height="auto" width="80%" alt="">
-            <p>Somos uma equipe de profissionais capacitados e que amam o que fazem.</p>
-            <p>Nos dedicados o máximo para que nossos alunos obtenham conhecimento e consiga os melhores resultados.</p>
+    <section id="team" class="section container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-md-5 d-flex justify-content-center align-intens-center">
+                <img class="team-icon" src="images/team.svg" height="auto" width="80%" alt="">
+            </div>
+            <div class="col-md-5">
+                <div class="section-header">
+                    <h1 class="">Nossa Equipe</h1>
+                    <p>Sempre em busca do conhecimento para oferecer um otimo trabalho</p>            
+                </div>
+                <div class="row justify-content-center">
+                <div class="col-md-5">
+                        <div class="team-card text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="indigo"  d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+                            <h5>Title do card</h5>
+                            <p>texto do card que pode ser grande ou pequeno né meninas tutupom</p>                            
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="team-card text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="indigo"  d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+                            <h5>Title do card</h5>
+                            <p>texto do card que pode ser grande ou pequeno né meninas tutupom</p>                            
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="team-card text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="indigo"  d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+                            <h5>Title do card</h5>
+                            <p>texto do card que pode ser grande ou pequeno né meninas tutupom</p>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        
     </section>
-    <section id="gallery" class="section">
-        <h1>Conheça mais nosso trabalho</h1>
-        <div class="section-content gallery-container">
-            <div class="gallery-item"><img class="gallery-image" src="images/old-couple.jpg" alt=""></div>
-            <div class="gallery-item"><img class="gallery-image" src="images/old-couple.jpg" alt=""></div>
-            <div class="gallery-item"><img class="gallery-image" src="images/old-couple.jpg" alt=""></div>
-            <a href="" class="galleries-button">Ver Todas</a>
+    <section id="gallery" class="section container">
+        <div class="section-header">
+            <h1>Photos</h1>   
+            <p>Conheça mais nosso trabalho</p> 
         </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-4">
+                <img class="img-fluid" src="images/old-couple.jpg" alt="">
+            </div>
+            <div class="col-sm-4">
+                <img class="img-fluid" src="images/old-couple.jpg" alt="">
+            </div>
+            <div class="col-sm-4">
+                <img class="img-fluid" src="images/old-couple.jpg" alt="">
+            </div>
+        </div>
+        <p class="text-right"><a href="" >Ver Todas</a></p>
     </section>
     <section id="blog" class="section">
         <h1>Blog da Elabore</h1>
@@ -69,9 +90,9 @@
     <section id="quote" class="section">
         <div class="section-content">
             <p class="quote-text"> 
-                <img src="images/quotes-symbol.png" class="quote-symbol">
-                Devemos aprender durante toda a vida sem imaginar que a sabedoria vem com a velhice.
-                <img src="images/quotes-symbol.png" class="quote-symbol-end">
+                <!-- <img src="images/quotes-symbol.png" class="quote-symbol"> -->
+                Com um pé no chão e o outro nas estrelas, o professor pode levar seus alunos a todos os lugares.                
+                <!-- <img src="images/quotes-symbol.png" class="quote-symbol-end"> -->
             <p class="quote-author">- Platão</p>
         </div>
     </section>
@@ -119,6 +140,4 @@
 
     </div>
 
-    <script type="text/javascript" src="js/app.js"></script>
-</body>
-</html>
+@endsection
