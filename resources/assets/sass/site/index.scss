@@ -1,5 +1,5 @@
 .section {
-    padding-bottom: 80px;
+    margin-bottom: 120px;
 }
 .section-header {
     padding: 2rem;
@@ -12,6 +12,7 @@
 
 .social-icon {
     width: 20px;
+    height: auto;
 }
 
 .logo {
@@ -20,4 +21,73 @@
 
 .team-icon {
     width: 100%;
+}
+
+.team-card svg{
+    width: 80px;
+    height: auto;
+    padding: 10px;
+}
+
+#go-top {
+    visibility: hidden;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background-color: aqua;
+    cursor: pointer;
+}
+
+#go-top-arrow:hover {
+    animation: jump 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+@keyframes jump {
+    0% {transform: translateY(-5px)};
+    25% {transform: translateY(5px)};
+    50% {transform: translateY(-5px)};
+}
+
+#go-top-arrow {
+    width: 60px;
+    height: 60px;
+    padding: 15px;
+}
+
+// Quote section
+
+.quote-msg {
+    position: relative;
+    text-align: center;
+    margin: 300px 100px;
+    z-index: 40;
+}
+
+.quote-symbol {
+    width: 500px;
+    height: auto;
+    position: absolute;
+    top: -200px;
+    left: calc(50% - 250px);
+    opacity: .15;
+    z-index: 30;
+    fill: cornflowerblue;
+}
+
+.quote-symbol svg{
+    width: 100%;
+    height: 100%;
+}
+
+#contact {
+    padding: 50px 20px 100px;
+    color: $gray-100;
+}
+
+.whatsapp-mob{
+    display: none;
+}
+
+.social-item {
+    margin: 10px 0px;
 }

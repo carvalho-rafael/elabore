@@ -10,17 +10,15 @@
             <p class="header-info-title">Aulas particulares</p>
             <p>Ensino Fundamental</p>
             <p>Ensino Médio</p>
-            <p><span class="header-info-extra">+</span> Pré-vestibular</p>
-            <p><span class="header-info-extra">+</span> Pré-IFBA</p>
             <a href="#about" class="scroll-down link-section">CONHEÇA</a>
         </div>
     </header>
-    <section id="about" class="section">
-        <h1>A ELABORE</h1>
-        <div class="section-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nisl ipsum, blandit at vulputate vitae, suscipit vel erat. Nam eu viverra nisi. Aenean rhoncus maximus nunc, sed efficitur ligula viverra congue. Nulla maximus enim ut risus dignissim egestas. Curabitur quis venenatis ante, vel tincidunt nibh.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nisl ipsum, blandit at vulputate vitae, suscipit vel erat. Nam eu viverra nisi. Aenean rhoncus maximus nunc, sed efficitur ligula viverra congue. Nulla maximus enim ut risus dignissim egestas. Curabitur quis venenatis ante, vel tincidunt nibh.</p>
+    <section id="about" class="section container">
+        <div class="section-header">
+            <h1>A ELABORE</h1>
         </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nisl ipsum, blandit at vulputate vitae, suscipit vel erat. Nam eu viverra nisi. Aenean rhoncus maximus nunc, sed efficitur ligula viverra congue. Nulla maximus enim ut risus dignissim egestas. Curabitur quis venenatis ante, vel tincidunt nibh.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nisl ipsum, blandit at vulputate vitae, suscipit vel erat. Nam eu viverra nisi. Aenean rhoncus maximus nunc, sed efficitur ligula viverra congue. Nulla maximus enim ut risus dignissim egestas. Curabitur quis venenatis ante, vel tincidunt nibh.</p>
     </section>
     <section id="team" class="section container-fluid">
         <div class="row justify-content-center">
@@ -57,11 +55,10 @@
                 </div>
             </div>
         </div>
-        
     </section>
     <section id="gallery" class="section container">
         <div class="section-header">
-            <h1>Photos</h1>   
+            <h1>Fotos</h1>   
             <p>Conheça mais nosso trabalho</p> 
         </div>
         <div class="row justify-content-center">
@@ -77,8 +74,21 @@
         </div>
         <p class="text-right"><a href="" >Ver Todas</a></p>
     </section>
-    <section id="blog" class="section">
-        <h1>Blog da Elabore</h1>
+    <section id="quote" class="section">
+        <div class="quote-msg">
+            <p class="display-4"> 
+                Com um pé no chão e o outro nas estrelas, o professor pode levar seus alunos a todos os lugares.                
+                <div class="quote-symbol">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z"/></svg>
+                </div>
+            <h3 class="quote-author">- Platão</h3>
+        </div>
+    </section>
+    <section id="blog" class="section container">
+        <div class="section-header">
+            <h1>Blog da Elabore</h1>
+            <p>Pensamentos e dicas para te ajudar nos estudos e na vida</p>
+        </div>
         <div class="section-content">
             <div>
                 <h3>Título</h3>
@@ -87,21 +97,11 @@
             <a href="">Ver todos os Posts</a>
         </div>
     </section>
-    <section id="quote" class="section">
-        <div class="section-content">
-            <p class="quote-text"> 
-                <!-- <img src="images/quotes-symbol.png" class="quote-symbol"> -->
-                Com um pé no chão e o outro nas estrelas, o professor pode levar seus alunos a todos os lugares.                
-                <!-- <img src="images/quotes-symbol.png" class="quote-symbol-end"> -->
-            <p class="quote-author">- Platão</p>
-        </div>
-    </section>
-    <section id="contact" class="section">
-        <div class="contact-container">
-        <h1>Contato</h1>
-        <p><span class="addr">End.:</span> Rua D, 86, Tancredo Neves, Salvador-Ba</p>
-        <div class="social-container">
-            <a class="social-item" href="mailto:rafaelvfcarvalho@gmail.com">
+    <section id="contact" class="container-fluid bg-dark">
+        <h6 class="mb-5"> Elabore - Boas ideias saem do papel</h6>
+        <p class="d-inline-block" ><span class="addr">End.:</span> Rua D, 86, Tancredo Neves, Salvador-Ba</p>
+        <div class="social-container d-inline-flex flex-column ml-5">
+            <a class="social-item text-reset" href="mailto:rafaelvfcarvalho@gmail.com">
                 <svg class= "social-icon email-icon" width="612px" height="612px" enable-background="new 0 0 612 612" version="1.1" viewBox="0 0 612 612" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
                     <path fill="#fff" d="m306.77 346.81h0.131c4.615 0 9.176-1.339 12.866-3.777l1.001-0.643c0.218-0.142 0.446-0.271 0.675-0.424l11.658-9.645 278.26-229.62c-0.576-0.795-1.557-1.339-2.602-1.339h-605.52c-0.751 0-1.448 0.272-2.003 0.729l291.12 239.95c3.669 3.038 8.904 4.769 14.413 4.769zm-306.77-212.92v340.37l208.55-168.47zm403.67 173.04 208.33 167.42v-339.32zm-66.237 54.644c-8.305 6.814-19.168 10.57-30.576 10.57-11.451 0-22.304-3.734-30.587-10.516l-47.765-39.394-228.5 184.56v0.587c0 1.753 1.502 3.244 3.276 3.244h605.49c1.741 0 3.232-1.491 3.232-3.255v-0.544l-228.31-183.44z" />
                 </svg>
@@ -129,15 +129,13 @@
                 </svg>
             </a>
         </div>
-        </div>
     </section>
     <div id="go-top">
-    <svg id="go-top-arrow" width="43.941mm" height="31.618mm" version="1.1" viewBox="0 0 43.941 31.618" xmlns="http://www.w3.org/2000/svg">
-        <g transform="translate(-47.276 -38.089)">
-            <path transform="scale(.26458)" d="m261.33 162.86-67.596 84.93 0.7832 0.61914 67.205-84.436 67.203 84.436 0.7832-0.61914-67.596-84.93-0.39063 0.31055z" color="#000000" color-rendering="auto" dominant-baseline="auto" fill="#fff" image-rendering="auto" shape-rendering="auto" solid-color="#000000" stroke="#fff" stroke-dashoffset="86.213" stroke-linecap="round" stroke-linejoin="round" stroke-width="30.104" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;paint-order:normal;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
-        </g>
-    </svg>
-
+        <svg id="go-top-arrow" width="43.941mm" height="31.618mm" version="1.1" viewBox="0 0 43.941 31.618" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(-47.276 -38.089)">
+                <path transform="scale(.26458)" d="m261.33 162.86-67.596 84.93 0.7832 0.61914 67.205-84.436 67.203 84.436 0.7832-0.61914-67.596-84.93-0.39063 0.31055z" color="#000000" color-rendering="auto" dominant-baseline="auto" fill="#fff" image-rendering="auto" shape-rendering="auto" solid-color="#000000" stroke="#fff" stroke-dashoffset="86.213" stroke-linecap="round" stroke-linejoin="round" stroke-width="30.104" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;paint-order:normal;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+            </g>
+        </svg>
     </div>
 
 @endsection

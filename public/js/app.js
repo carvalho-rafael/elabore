@@ -1,5 +1,5 @@
 
-const goTop = document.getElementById("go-top");
+const goTop = document.querySelector("#go-top");
 window.onscroll = function(){
     if(document.documentElement.scrollTop > 900){
         goTop.style.visibility = "visible";
